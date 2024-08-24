@@ -1,0 +1,121 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html,body {
+        background-color: lightblue;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items:  center ;
+        justify-content: center; 
+        height: 100%;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+    }
+
+    .contenedor-principal {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 30 px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 120px;
+        height: 48px;
+    }
+
+
+
+    .columnaLateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+        padding: 20px;
+        margin-right: 20px;
+        height: 100%;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        resize: none;
+    }
+    
+    .botonEncriptar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .botonEncriptar button {
+        flex: 1;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .columnaTexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 3;
+        padding: 20px;
+        background-color: #f0f4f8;
+        border-radius: 20px;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .columnaTexto img {
+        max-width: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Eliminé el selector #botonEncriptar incorrecto y corregí el selector clase botonEncriptar */
+    .botonEncriptar {
+        display: flex;
+        justify-content: space-evenly;
+        /* Distribuye el espacio uniformemente entre los botones */
+        align-items: flex-end;
+        border-radius: 10px;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        /* Asegura que ocupe todo el ancho del contenedor */
+    }
