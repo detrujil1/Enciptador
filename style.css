@@ -1,121 +1,112 @@
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+* {
+
+    background: #f3f5fc;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+}
 
 
-    html,body {
-        background-color: lightblue;
-        padding: 0;
-        margin: 0;
-        height: 100%;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items:  center ;
-        justify-content: center; 
-        height: 100%;
-    }
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
 
 
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        justify-content: center;
-        width: 100%;
-        flex: 1;
-    }
+main {
+    display: flex;
 
-    .contenedor-principal {
+    margin-left: 80px;
+    height: 100%;
+    padding: 20px 20px 40px 20px;
+}
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 100%;
-        border-radius: 20px;
-        padding: 20px;
-        gap: 30 px;
-    }
+.textarea {
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
 
-    .logo {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 120px;
-        height: 48px;
-    }
+::placeholder {
+    color: #0a3871;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.mensaje {
+    background-color: white;
+    background-image: url("/img/Muñeco.png");
+    background-position: top 200px left 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    padding: 20px 30px 70px 40px;
+    height: 600px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+
+.botonEncriptar {
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn-desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    width: 336px;
 
 
 
-    .columnaLateral {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 2;
-        padding: 20px;
-        margin-right: 20px;
-        height: 100%;
-    }
-    textarea {
-        width: 100%;
-        height: 100px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        resize: none;
-    }
-    
-    .botonEncriptar {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    
-    .botonEncriptar button {
-        flex: 1;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        margin: 0 10px;
-    }
+}
 
-    .columnaTexto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 3;
-        padding: 20px;
-        background-color: #f0f4f8;
-        border-radius: 20px;
-        text-align: center;
-        height: 100%;
-    }
-    
-    .columnaTexto img {
-        max-width: 100%;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
+.btn-encriptar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
 
-    /* Eliminé el selector #botonEncriptar incorrecto y corregí el selector clase botonEncriptar */
-    .botonEncriptar {
-        display: flex;
-        justify-content: space-evenly;
-        /* Distribuye el espacio uniformemente entre los botones */
-        align-items: flex-end;
-        border-radius: 10px;
-        padding: 10px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 20px;
-        width: 100%;
-        /* Asegura que ocupe todo el ancho del contenedor */
-    }
+}
+
+.copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+    margin-top: 20px;
+
+}
+
+.info {
+    font-size: small;
+}
+
+.html {
+    height: 100%;
+}
