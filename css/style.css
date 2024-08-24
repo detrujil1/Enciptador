@@ -41,7 +41,7 @@ main {
 
 .mensaje {
     background-color: white;
-    background-image: url("./img/Muneco.png");
+    background-image: url("../img/Muneco.png");
     background-position: top 200px left 10px;
     background-size: contain;
     background-repeat: no-repeat;
