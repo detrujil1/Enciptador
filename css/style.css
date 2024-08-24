@@ -110,3 +110,42 @@ main {
 .html {
     height: 100%;
 }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .textarea, .mensaje, .btn-desencriptar, .btn-encriptar, .copiar {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .mensaje {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .copiar {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textarea, .mensaje {
+        height: 200px;
+    }
+
+    .btn-desencriptar, .btn-encriptar, .copiar {
+        height: 50px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .mensaje {
+        height: 300px;
+    }
+}
