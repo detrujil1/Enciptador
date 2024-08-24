@@ -57,7 +57,7 @@ function desenciptar (stringEnciptado){
     return stringEnciptado
 }
 
-function btnCopiarTexto(stringEnciptado){
+function btnCopiarTexto(){
     if (mensaje.value.trim() === "") {
         alert("No hay texto desencriptado para copiar.");
     } else {
